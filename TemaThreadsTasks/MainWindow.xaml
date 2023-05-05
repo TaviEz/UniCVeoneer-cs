@@ -6,11 +6,10 @@
         xmlns:local="clr-namespace:TemaThreadsTasks"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
         <Label x:Name = "MainLabel" Content="testing"></Label>
-        <Button x:Name ="normalExecute" Click ="normalExecute_Click" Content="Normal Execute" HorizontalAlignment="Left" Margin="173,43,0,0" VerticalAlignment="Top" Width="395"/>
-        <Button Click ="asyncExecute_Click" Content="Async Execute" HorizontalAlignment="Left" Margin="173,118,0,0" VerticalAlignment="Top" Width="395"/>
-        <Label x:Name="SecondLabel" Content="testing2" Width="60"></Label>
-
-    </Grid>
+        <Label x:Name="SecondLabel" Content="testing2"></Label>
+        <Button x:Name ="normalExecute" Click ="normalExecute_Click" Content="Normal Execute"/>
+        <Button Click ="asyncExecute_Click" Content="Async Execute"/>
+    </StackPanel>
 </Window>
