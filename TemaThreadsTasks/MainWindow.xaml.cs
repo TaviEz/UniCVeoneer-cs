@@ -31,15 +31,17 @@ namespace TemaThreadsTasks
         private void normalExecute_Click(object sender, RoutedEventArgs e)
         {
             MainLabel.Content = "Start ";
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
             MainLabel.Content += "End ";
         }
 
         private async void asyncExecute_Click(object sender, RoutedEventArgs e)
         {
             SecondLabel.Content = "Start ";
-            await Task.Delay(10000);
+            asyncExecute.IsEnabled = false;
+            await Task.Delay(5000);
             SecondLabel.Content += "End";
+            asyncExecute.IsEnabled = true;
         }
     }
 }

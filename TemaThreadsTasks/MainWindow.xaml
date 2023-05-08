@@ -10,6 +10,6 @@
         <Label x:Name = "MainLabel" Content="testing"></Label>
         <Label x:Name="SecondLabel" Content="testing2"></Label>
         <Button x:Name ="normalExecute" Click ="normalExecute_Click" Content="Normal Execute"/>
-        <Button Click ="asyncExecute_Click" Content="Async Execute"/>
+        <Button x:Name ="asyncExecute" Click ="asyncExecute_Click" Content="Async Execute"/>
     </StackPanel>
 </Window>
